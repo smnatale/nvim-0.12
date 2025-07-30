@@ -1,7 +1,7 @@
 -- Source nvim config changes
 vim.keymap.set("n", "<leader>o", ":update<CR> :source<CR>")
 
--- Disable Space bar since it'll be used as the leader key
+-- Disable Space bar since it will be used as the leader key
 vim.keymap.set("n", "<leader>", "<nop>")
 vim.keymap.set("v", "<leader>", "<nop>")
 
