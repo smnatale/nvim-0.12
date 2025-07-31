@@ -1,6 +1,9 @@
 vim.pack.add({
   { src = "https://github.com/stevearc/oil.nvim" },
   { src = "https://github.com/echasnovski/mini.pick" },
+  { src = "https://github.com/echasnovski/mini.icons" },
+  { src = "https://github.com/echasnovski/mini.notify" },
+  { src = "https://github.com/echasnovski/mini.pairs" },
 })
 
 require("oil").setup({
@@ -13,6 +16,11 @@ require("oil").setup({
 })
 
 require("mini.pick").setup()
+require("mini.icons").setup()
+require("mini.notify").setup()
+require("mini.pairs").setup()
+
+vim.ui.select = MiniPick.ui_select
 
 vim.keymap.set("n", "<leader>e", ":Oil<CR>")
 vim.keymap.set("n", "<leader>sf", ":Pick files<CR>")

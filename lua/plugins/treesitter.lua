@@ -29,4 +29,6 @@ require("nvim-treesitter.configs").setup({
   autopairs = {
     enable = true,
   },
+  modules = {},
+  ignore_install = {},
 })

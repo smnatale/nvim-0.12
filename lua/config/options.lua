@@ -71,3 +71,6 @@ vim.opt.smartcase = true
 
 -- diagnosic inline
 vim.diagnostic.config({ virtual_text = true })
+
+-- bordered popups
+vim.opt.winborder = "rounded"
